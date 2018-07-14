@@ -1,0 +1,70 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Lato";
+    color: white;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+h1 {
+	padding: 300px;
+	font-weight: 700;
+	font-size: 5em;
+    color: #ffffcc;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+    text-align: center;
+   }
+   .dropdown-item{
+       padding-left:4px;
+        color: #555;
+    background-color: #e7e7e7
+   }
+   .dropdown-menu{
+    width:200px;
+    background-color: #e7e7e7;
+    padding:0px;
+   }
+   #email{
+    color:#66ff66;
+   }
+   #instagram{
+    color:#ff33cc;
+   }
+   h4{
+    width:800px;
+    padding-right:0px;
+    margin-right:0px;
+   }
+   #youtube{
+    color:#ff0000
+   }
+   
+ header{
+ 	background-image: url(https://images.unsplash.com/photo-1475691058852-37b5d9b6a878?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2d4d65407c63d7550553d588639e3a05&auto=format&fit=crop&w=750&q=80);
+    background-repeat: none;
+    background-size: cover; 
+    height: 600px;
+ }
+ h2{
+  color: blue;
+  font-weight: 300;
+    font-size: 5em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  text-align: center;               
+}
+.thumbnail{
+ margin-left:100px;
+ width:610px;
+ height: 460px;
+}
+.thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 200px;
+}

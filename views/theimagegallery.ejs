@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ImageGallery</title>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/image.css">
+</head>
+<body>
+
+ <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand animated rubberBand infinite"  href="#">Celebs Talk</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li class="active"><a href="/imagegallery">Image Gallery</a></li>
+        <li class="dropdown">
+         <a class="btn btn-secondary dropdown-toggle" href="/celebrities.ejs" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Celibrities
+         </a>
+
+        <div class="dropdown-menu" height="20" aria-labelledby="dropdownMenuLink">
+    <div><a class="dropdown-item" href="/aishwarya">Aishwarya Rai Bachchan</a></div>
+    <div><a class="dropdown-item" href="/alia">Alia Bhatt</a></div>
+    <div><a class="dropdown-item" href="/anushka">Anushka Sharma</a></div>
+    <div><a class="dropdown-item" href="/deepika">Deepika Padukone</a></div>
+    <div><a class="dropdown-item" href="/katrina">Katrina Kaif</a></a></div>
+  </div></li>
+       </li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="">Facebook <i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://www.instagram.com/celebs_talk0/">Instagram <i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCTR_dgS788sV4lH88aSbZFg">YouTube <i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </div>
+ </nav>
+ <header>
+  <h1>The Image Gallery</h1>
+</header>
+<div class="container" >
+  <h2>Images</h2>
+<% if(files) { %>
+<div class="row" >
+        <% files.forEach(function(file){ %>
+        <%if (file.isImage){ %>
+        <div class="col-lg-4 col-sm-6">
+         <div class= "thumbnail"  >
+            <img class="img-responsive"  src="image/<%=file.filename%>" alt="" width="340" height="200">
+          <% }  %>
+    </div>
+    </div>
+  <% })%>
+  <% } %>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+ <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript"  src="/image.js"></script>
+
+</body>
+</html>

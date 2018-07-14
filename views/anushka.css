@@ -1,0 +1,127 @@
+header {
+    background-position: center; 
+    z-index: 1;
+  position: relative;
+  text-align: center;
+}
+
+body
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Lato";
+    color: white;
+}
+.dropdown-item{
+       padding-left:4px;
+        color: #555;
+    background-color: #e7e7e7
+   }
+   .dropdown-menu{
+    width:200px;
+    background-color: #e7e7e7;
+   }
+
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+    color: white;
+   }
+   h3{
+    color: white;
+   }
+   p{
+       font-size:18px;
+   }
+   .btn-info{
+       margin-left:400px;
+   }
+h2{
+  color: #dc007b;
+  font-weight: 500;
+    font-size: 6em;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+.thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: 200px;
+}
+#imagegallery{
+    margin-left: 500px;
+}
+
+.slideshow { 
+  position: absolute;
+  width: 100%;
+  height: 1000px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.thumbnail{
+    width :300 ;
+    height :205;
+}
+
+.slideshow li { 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+   background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite; 
+}
+.slideshow li:nth-child(1) { 
+background-image: url(https://images2.alphacoders.com/473/thumb-1920-473056.jpg);
+}
+.slideshow li:nth-child(2) { 
+  background-image: url(https://www.hdwallpapers.in/download/anushka_sharma_vogue_india_2016-HD.jpg);
+  animation-delay: 10s; 
+}
+.slideshow li:nth-child(3) { 
+  background-image: url(http://images-hdwallpapers.com/wp-content/uploads/2017/03/Beautiful-Anushka-Sharma-HD-Images-Free-Download.jpg);
+  animation-delay: 20s; 
+}
+@keyframes imageAnimation { 
+  0% { 
+    opacity: 0; 
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+#videothumbnail{
+    padding-top: 80vh;
+}
+.content{
+	padding-top: 25%;
+	text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+ 
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+hr {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
