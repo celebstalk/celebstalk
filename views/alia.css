@@ -92,6 +92,17 @@ background-image: url(http://www.startwallpapers.com/wp-content/uploads/2017/09/
   background-image: url(http://paperlief.com/images/alia-bhatt-wallpaper-1.jpg);
   animation-delay: 20s; 
 }
+footer{
+    margin-top: 10px;
+    background-color: black;
+    height: 25px;
+    padding-left: 100px;
+    color: white;
+}
+#branding{
+    float: right;
+    padding-right: 50px;
+}
 @keyframes imageAnimation { 
   0% { 
     opacity: 0; 

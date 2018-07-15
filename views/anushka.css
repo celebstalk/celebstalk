@@ -81,6 +81,17 @@ h2{
   z-index: 0;
   animation: imageAnimation 50s linear infinite; 
 }
+footer{
+    margin-top: 10px;
+    background-color: black;
+    height: 25px;
+    padding-left: 100px;
+    color: white;
+}
+#branding{
+    float: right;
+    padding-right: 50px;
+}
 .slideshow li:nth-child(1) { 
 background-image: url(https://images2.alphacoders.com/473/thumb-1920-473056.jpg);
 }

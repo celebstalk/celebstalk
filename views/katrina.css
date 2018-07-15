@@ -92,6 +92,17 @@ background-image: url(https://www.hdwallpapers.in/download/katrina_kaif_pink_lip
   background-image: url(http://i.bollywoodmantra.com/albums/wallpapers/katrina-kaif/katrina-kaif__541792.jpg);
   animation-delay: 20s; 
 }
+footer{
+    margin-top: 10px;
+    background-color: black;
+    height: 25px;
+    padding-left: 100px;
+    color: white;
+}
+#branding{
+    float: right;
+    padding-right: 50px;
+}
 @keyframes imageAnimation { 
   0% { 
     opacity: 0; 

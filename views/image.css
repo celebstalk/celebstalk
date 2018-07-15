@@ -35,6 +35,19 @@ h1 {
     background-size: cover; 
     height: 800px;
  }
+ 
+ footer{
+    margin-top: 10px;
+    background-color: black;
+    height: 25px;
+    padding-left: 100px;
+    color: white;
+}
+#branding{
+    float: right;
+    padding-right: 50px;
+}
+ 
  h2{
   color: blue;
   font-weight: 300;

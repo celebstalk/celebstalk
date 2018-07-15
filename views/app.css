@@ -46,6 +46,17 @@ h2{
 #imagegallery{
     margin-left: 500px;
 }
+footer{
+    margin-top: 10px;
+    background-color: black;
+    height: 25px;
+    padding-left: 100px;
+    color: white;
+}
+#branding{
+    float: right;
+    padding-right: 50px;
+}
 
 .slideshow { 
   position: absolute;
